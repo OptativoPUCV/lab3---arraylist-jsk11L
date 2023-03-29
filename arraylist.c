@@ -72,6 +72,12 @@ void* pop(ArrayList * l, int i){
 }
 
 //remove elements
-void clean(ArrayList * l){
-    
+void clean(ArrayList * lista){
+  free(lista);
+  lista = (ArrayList *) malloc(sizeof(ArrayList));
+  if(lista == NULL) exit(EXIT_FAILURE);
+  lista->data = (void *) calloc(2,sizeof(void));
+  lista->capacity = 2;
+  lista->size = 0;
+  return;
 }
