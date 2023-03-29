@@ -65,8 +65,9 @@ void* pop(ArrayList * l, int i){
     for(int j = i; j < l->size-1; j++){
       l->data[j] = l->data[j+1];
     }
+  
     free(l->data[l->size]);
-    l->size--;
+    if(l->size != 0) l->size--;
     return algo;
 }
 
