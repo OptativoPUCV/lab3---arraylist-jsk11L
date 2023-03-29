@@ -6,3 +6,23 @@ Wed 29 Mar 2023 02:46:44 AM UTC:
  tests:  0|6
 total_score: 0/70
 82fcac8
+Wed 29 Mar 2023 02:48:29 AM UTC: 
+ arraylist.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:16:40: error: expected ‘)’ before ‘;’ token
+   16 |     if(lista == NULL) exit(EXIT_FAILURE;
+      |                           ~            ^
+arraylist.c:20:18: error: expected ‘;’ before ‘}’ token
+   20 |     return lista;
+      |                  ^
+      |                  ;
+   21 | }
+      | ~                 
+arraylist.c:21:1: error: control reaches end of non-void function [-Werror=return-type]
+   21 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+20bfb86
