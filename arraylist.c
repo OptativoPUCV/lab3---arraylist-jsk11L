@@ -59,8 +59,14 @@ int get_size(ArrayList * l){
 
 void* pop(ArrayList * l, int i){
     void* algo = NULL;
+    if (i < 0) i = i+l->size;
+    algo = l->data[i];
 
-    
+    for(int j = i; j < l->size-1; j++){
+      l->data[j] = l->data[j+1]
+    }
+    free(l->data[l->size]);
+    l->size--;
     return algo;
 }
 
