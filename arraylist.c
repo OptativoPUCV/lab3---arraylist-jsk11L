@@ -38,8 +38,8 @@ void push(ArrayList * l, void * data, int i){
     }
     if(i != l->size){
       int j = i;
-      for(; j < l->size-1; j++){
-        l->data[j] = l->data[j+1];
+      for(; j < (l->size); j++){
+        l->data[j+1] = l->data[j];
       }
     }
     l->data[i] = data;
