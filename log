@@ -285,3 +285,8 @@ arraylist.c:76:13: error: ‘realloc’ called on a pointer to an unallocated ob
 cc1: all warnings being treated as errors
 Compilation failed
 bb33ac6
+Wed 29 Mar 2023 03:37:56 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+0e9796b

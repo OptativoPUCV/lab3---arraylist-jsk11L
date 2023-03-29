@@ -73,7 +73,7 @@ void* pop(ArrayList * l, int i){
 
 //remove elements
 void clean(ArrayList * l){
-  l->data = (void *) realloc(2,sizeof(void));
+  l->data = (void *) realloc(l->data,2*sizeof(void));
   l->capacity = 2;
   l->size = 0;
   return;
