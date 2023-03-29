@@ -237,3 +237,9 @@ arraylist.c:66:32: error: expected ‘;’ before ‘}’ token
       |     ~                           
 Compilation failed
 e5ab0bb
+Wed 29 Mar 2023 03:29:32 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|2
+total_score: 40/70
+c15c116
